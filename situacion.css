@@ -38,3 +38,15 @@ body {
   width: auto;
   height: 25px;
 }
+
+.timide {
+  display: none;
+}
+
+.sociable {
+  display: none;
+}
+
+/* .visible {
+  display: none;
+} */
