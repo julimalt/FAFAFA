@@ -20,21 +20,24 @@ const redirectPage = () => {
     if (input.checked) respuesta = input.value;
   }
 
+  console.log("\n\nRespuesta =>", respuesta);
+
+  console.log("\n\nSwitch");
   switch (respuesta) {
-    case 1:
-    case 2:
+    case "1":
+    case "2":
       console.log("caso 1/2");
       url = "situacion2.html?" + "type=" + myParam + "&caso=" + respuesta;
       break;
-    case 3:
-    case 4:
-    case 0:
+    case "3":
+    case "4":
+    case "0":
       console.log("caso 3/4");
       url = "situacion3.html?" + "type=" + myParam + "&caso=" + respuesta;
       break;
   }
 
-  console.log(url);
+  console.log("\n\nurl =>", url);
 
   //   window.location.href = url;
 };
