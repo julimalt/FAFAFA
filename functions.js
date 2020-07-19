@@ -8,7 +8,7 @@ const showDiv = () => {
   buttonResponder.style.display = "inherit";
 };
 
-const redirectPage = () => {
+const redirectPage = (url1, url2) => {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("type");
   const allInputs = document.querySelectorAll("input[type=radio]");
@@ -26,12 +26,12 @@ const redirectPage = () => {
   switch (respuesta) {
     case "1":
     case "2":
-      url = "situacion2.html?" + newParams;
+      url = url1 + "?" + newParams;
       break;
     case "3":
     case "4":
     case "0":
-      url = "situacion3.html?" + newParams;
+      url = url2 + "?" + newParams;
       break;
   }
 
