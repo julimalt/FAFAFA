@@ -78,5 +78,5 @@ body {
 }
 
 .animacion {
-  transition: all 2s ease 0.5s;
+  transition: all 2s linear 0.5s;
 }

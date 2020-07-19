@@ -21,6 +21,9 @@ const redirectPage = (url1, url2) => {
     if (input.checked) respuesta = input.value;
   }
 
+  console.log(url1);
+  console.log(url2);
+
   newParams = "type=" + myParam + "&caso=" + respuesta;
 
   switch (respuesta) {
@@ -35,5 +38,6 @@ const redirectPage = (url1, url2) => {
       break;
   }
 
-  window.location.href = url;
+  console.log(url);
+  //window.location.href = url;
 };
