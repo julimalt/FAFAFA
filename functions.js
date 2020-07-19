@@ -1,6 +1,9 @@
 var showDiv = () => {
-  console.log("\n\nurl=>", window.location.href);
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("type");
-  console.log("\n\ntype=>", myParam);
+  const divRespuestas = document.getElementsByClassName(myParam);
+  const buttonResponder = document.getElementById("responder");
+
+  divRespuestas[0].style.display = "inherit";
+  buttonResponder.style.display = "inherit";
 };
