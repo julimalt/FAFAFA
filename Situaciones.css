@@ -1,10 +1,18 @@
-:root {
-	--white: #ffffff;
-	--light: #f0eff3;
-	--black: #000000;
-	--dark-blue: #1f2029;
-	--dark-light: #353746;
-	--red: #da2c4d;
-	--yellow: #f8ab37;
-	--grey: #ecedf3;
+body{
+    background-size: unset;
 }
+.caja { 
+    font-family: 'Exo 2', sans-serif;; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #e7b4ccda; 
+    margin: 0 0 25px; 
+    overflow: hiden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #e7b4ccda;}
+    
