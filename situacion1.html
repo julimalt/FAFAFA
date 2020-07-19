@@ -20,29 +20,25 @@
     ¿Qué hacemos?
   </div>
   <button type="button" class="myButton" onclick="showDiv()">Tomar decisión</button>
-  <form onsubmit="" class="form">
+  <select>
     <div class="sociable">
       <div class="inputGroup box">
-        <input id="radio1" name="respuesta" type="radio" />
-        <label for="radio1">Opcion 1</label>
+        <option value="1">Opción 1</option>
       </div>
       <div class="inputGroup box">
-        <input id="radio2" name="respuesta" type="radio" />
-        <label for="radio2">Opcion 2</label>
+        <option value="2">Opción 2</option>
       </div>
     </div>
     <div class="timide">
       <div class="inputGroup box">
-        <input id="radio3" name="respuesta" type="radio" />
-        <label for="radio3">Opcion 3</label>
+        <option value="3">Opción 3</option>
       </div>
       <div class="inputGroup box">
-        <input id="radio4" name="respuesta" type="radio" />
-        <label for="radio4">Opcion 4</label>
+        <option value="4">Opción 4</option>
       </div>
     </div>
-  </form>
-  <button type="submit" id="responder" class="myButton">Siguiente</button>
+  </select>
+  <button type="button" id="responder" onclick="redirectPage()">Siguiente</button>
   
   
 </body>
