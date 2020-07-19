@@ -69,8 +69,10 @@ body {
   transition: width 0.4s ease-in-out;
   background-color: #ccc;
 }
+.inicio {
+  width: 0%;
+}
 
-/**** GRADIENTS ****/
-.blue span {
-  background-color: #34c2e3;
+.final {
+  width: 100%;
 }
