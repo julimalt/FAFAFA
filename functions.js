@@ -13,25 +13,23 @@ const redirectPage = () => {
   const myParam = urlParams.get("type");
   const allInputs = document.querySelectorAll("input[type=radio]");
   let respuesta = 0;
-
-  console.log(allInputs);
+  let url = "";
 
   for (let i = 0; i < allInputs.length; i++) {
     let input = allInputs[i];
     if (input.checked) respuesta = input.value;
   }
-  console.log(respuesta);
-
-  let url = "";
 
   switch (respuesta) {
     case 1:
     case 2:
+      console.log("caso 1/2");
       url = "situacion2.html?" + "type=" + myParam + "&caso=" + respuesta;
       break;
     case 3:
     case 4:
     case 0:
+      console.log("caso 3/4");
       url = "situacion3.html?" + "type=" + myParam + "&caso=" + respuesta;
       break;
   }
