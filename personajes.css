@@ -1,56 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
-  .personajes{
-    text-decoration: none;
-    padding: 15px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #000000;
-    background-color: #d4d4d4bd;
-    border-radius: 27px;
-    border: 2px solid #e7b4ccda;
-    float:none;
-    text-align:center;
-  }
-  
-  .personajes:hover{
-    color: #727272;
-    background-color: #e9e9e9;
-  }
+.texto-presentacion {
+  padding: 30px 50px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #666565;
+  background-color: #e7b4ccda;
+  border-radius: 27px;
+  border: 2px solid #828282;
+  text-align: center;
+  margin: 15px;
+  width: auto;
+  height: auto;
+}
 
-  .li {
-    text-align: left;
-  }
+.formato-boton {
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+  background-color: #d4d4d4bd;
+  border-radius: 27px;
+  border: 2px solid #e7b4ccda;
+  float: none;
+  text-align: center;
+}
 
-  .imagen-personaje-mujer-extrovertida {
-    display:block;
-    margin:left;
-    padding:center;
-  }
-  .imagen-personaje-mujer-introvertida {
-    display:block;
-    margin:right;
-    padding:center;
-  }
+.formato-boton:hover {
+  color: #727272;
+  background-color: #e9e9e9;
+}
 
-  .fondo {
-    background-size: cover;
-  }
-  
+li {
+  text-align: left;
+}
 
-  .alex-presentacion{
-    text-decoration: none;
-    padding: 20px;
-    font-weight: 400px;
-    font-size: 20px;
-    color: #666565;
-    background-color: #e7b4ccda;
-    border-radius: 27px;
-    border: 2px solid #828282;
-    float:none;
-    text-align:center;
-    margin: 30px;
-    width: auto;
-    height: 200px;
-    
-  }
- 
+.fondo {
+  background-size: contain;
+}
+
+.personajes-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 25px 0px;
+}
