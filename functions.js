@@ -22,15 +22,19 @@ const redirectPage = () => {
 
   let url = "";
 
-  switch(respuesta){
-      case 1:
-      case 2:
-        url = "situacion2.html?" + "type=" + myParam + "&caso=" + respuesta;
-        break;
-        case 3:
-            case 4: 
-            case 
+  switch (respuesta) {
+    case 1:
+    case 2:
+      url = "situacion2.html?" + "type=" + myParam + "&caso=" + respuesta;
+      break;
+    case 3:
+    case 4:
+    case 0:
+      url = "situacion3.html?" + "type=" + myParam + "&caso=" + respuesta;
+      break;
   }
 
-  window.location.href = 
+  console.log(url);
+
+  window.location.href = url;
 };
