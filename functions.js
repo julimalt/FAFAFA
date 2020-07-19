@@ -16,9 +16,9 @@ const redirectPage = () => {
 
   console.log(allInputs);
 
-  for (let i = 0; i < allInputs.options.length; i++) {
-    let option = allInputs.options[i];
-    if (option.selected) respuesta = option.value;
+  for (let i = 0; i < allInputslength; i++) {
+    let input = allInputs[i];
+    if (input.checked) respuesta = input.value;
   }
   console.log(respuesta);
 
