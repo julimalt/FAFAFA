@@ -11,11 +11,13 @@ const showDiv = () => {
 const redirectPage = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("type");
-  const select = document.querySelector("select");
+  const allInputs = document.querySelectorAll("input[type=radio]");
   let respuesta = 0;
 
-  for (let i = 0; i < select.options.length; i++) {
-    let option = select.options[i];
+  console.log(allInputs);
+
+  for (let i = 0; i < allInputs.options.length; i++) {
+    let option = allInputs.options[i];
     if (option.selected) respuesta = option.value;
   }
   console.log(respuesta);
