@@ -1,12 +1,12 @@
 
   .personajes{
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     font-weight: 600;
     font-size: 20px;
     color: #000000;
     background-color: #d4d4d4bd;
-    border-radius: 4px;
+    border-radius: 27px;
     border: 2px solid #e7b4ccda;
     float:none;
     text-align:center;
@@ -42,13 +42,13 @@
     padding: 20px;
     font-weight: 400px;
     font-size: 20px;
-    color: #ffffff;
+    color: #666565;
     background-color: #e7b4ccda;
-    border-radius: 6px;
+    border-radius: 27px;
     border: 2px solid #828282;
     float:none;
     text-align:center;
-    margin: 100px;
+    margin: 30px;
     width: auto;
     height: 200px;
     

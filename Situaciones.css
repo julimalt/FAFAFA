@@ -1,14 +1,20 @@
 body{
-    background-size: unset;
+    background-size: cover;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	margin: 0 auto;
 }
 .caja { 
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     font-weight: 400px;
     font-size: 20px;
-    color: #ffffff;
+    color: #666565;
     background-color: #e7b4ccda;
-    border-radius: 6px;
+    border-radius: 27px;
     border: 2px solid #828282;
     float:none;
     text-align:center;
@@ -18,12 +24,12 @@ body{
 
     .box{ 
         text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     font-weight: 400px;
     font-size: 20px;
-    color: #ffffff;
-    background-color: #e7b4ccda;
-    border-radius: 6px;
+    color: #020202;
+    background-color: #cfcfcf;
+    border-radius: 27px;
     border: 2px solid #828282;
     float:none;
     text-align:center;
