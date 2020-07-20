@@ -1,3 +1,8 @@
+@media only screen and (max-width: 768px) {
+    .manos img {
+      width: 150px;
+    }
+    
 body {
   background-size: cover;
   display: flex;
