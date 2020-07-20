@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Perdidos en Tokyo</title>
-    <link rel="shortcut icon" href="favicon.jfif" />
-    <link rel="stylesheet" href="situacion.css" />
-    <link rel="stylesheet" href="estilo.css" />
-    <script src="functions.js"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
-    </style>
-  </head>
 
-  <body class="background" background="tokyo2.gif">
-    <div class="caja">Esta es la situacion 2</div>
-    <button type="button" class="myButton">Tomar decisión</button>
-    <form class="form">
-      <div class="sociable">
-        <div class="inputGroup box">
-          <input id="radio1" name="radio" type="radio" />
-          <label for="radio1">Opcion 1</label>
-        </div>
-        <div class="inputGroup box">
-          <input id="radio2" name="radio" type="radio" />
-          <label for="radio2">Opcion 2</label>
-        </div>
+<head>
+  <title>Perdidos en Tokyo</title>
+  <link rel="shortcut icon" href="favicon.jfif" />
+  <link rel="stylesheet" href="situacion.css" />
+  <link rel="stylesheet" href="estilo.css" />
+  <script src="functions.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
+  </style>
+</head>
+
+<body class="background" background="tokyo2.gif">
+  <div class="caja">
+    ¡Llegamos a Tokio!​ Son las 12 del mediodía, la conferencia será a las
+    18hs.<br />
+    ​ El hotel se encuentra a 2 km de distancia del aeropuerto​ </br>
+    ¿Qué hacemos?
+  </div>
+  <button type="button" class="myButton" onclick="showDiv()">Tomar decisión</button>
+  <div>
+    <div class="sociable">
+      <div class="inputGroup box">
+        <input name="respuesta" type="radio" value="1" />
+        <label for="radio1">Opcion 1</label>
       </div>
-      <div class="timide">
-        <div class="inputGroup box">
-          <input id="radio3" name="radio" type="radio" />
-          <label for="radio3">Opcion 3</label>
-        </div>
-        <div class="inputGroup box">
-          <input id="radio4" name="radio" type="radio" />
-          <label for="radio4">Opcion 4</label>
-        </div>
+      <div class="inputGroup box">
+        <input name="respuesta" type="radio" value="2" />
+        <label for="radio2">Opcion 2</label>
       </div>
-    </form>
-    <button type="submit" class="myButton visible">Siguiente</button>
-  </body>
+    </div>
+    <div class="timide">
+      <div class="inputGroup box">
+        <input name="respuesta" type="radio" value="3" />
+        <label for="radio3">Opcion 3</label>
+      </div>
+      <div class="inputGroup box">
+        <input name="respuesta" type="radio" value="4" />
+        <label for="radio4">Opcion 4</label>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="myButton" id="responder" onclick="redirectPage('situacion2.html', 'situacion3.html', 'situacion2.html', 'situacion3.html')">Siguiente</button>
+  </div>
+
+
+</body>
+<script type="text/javascript" src="functions.js"></script>
+
 </html>
