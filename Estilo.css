@@ -31,3 +31,6 @@ body {
 	position: absolute;
 	top:1px;
 } */
+.inputGroup:active {
+  background-color: #e7b4ccda;
+}
