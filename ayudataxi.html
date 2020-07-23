@@ -14,42 +14,34 @@
 
 <body class="background" background="tokyo2.gif">
   <div class="caja">
-    Llegamos al hotel, le contamos a la gente de recepción nuestra situación y nos ofrecen 
-    pedir ropa para la conferencia a un local de su confianza, en el que solo hablan japones, 
-    por eso el recepcionista se ofrece a pedirlo por nosotros.
+    Vamos hacia la recepcion, contamos lo que sucedio y nos ofrecen los datos de la compañia de taxi.
 
   </div>
   <button type="button" class="myButton" onclick="showDiv()">Tomar decisión</button>
   <div>
     <div class="sociable">
       <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"   value="1" />
-        Le agradecemos, pero preferimos comprar por nuestra cuenta.
-      </label>
+        <input name="respuesta" type="radio" class="inputGroup"  value="1" />
+        <label for="radio1">No queremos perder tiempo, asique damos por perdida la valija y nos vamos a comprar ropa.</label>
       </div>
       <div class="inputGroup box">
-        <label>
         <input name="respuesta" type="radio" class="inputGroup"  value="2" />
-        Aceptamos la ayuda que nos ofrece y nos dice que estara listo para retirar a las 16hs.
-      </label>
+        <label for="radio2">Queremos saber que paso con nuestra valija, y llamamos a la compañia.</label>
       </div>
     </div>
     <div class="timide">
       <div class="inputGroup box">
         <input name="respuesta" type="radio" class="inputGroup"  value="3" />
-        <label for="radio3">Le agradecemos la ayuda pero preferimos ir a comprar la ropa por nuestra cuenta.</label>
+        <label for="radio3">Buscamos un local para comprar ropa y damos por perdida la valija.</label>
       </div>
       <div class="inputGroup box">
         <input name="respuesta" type="radio" class="inputGroup"  value="4" />
-        <label for="radio4">Aceptamos la ayuda y el recepcionista nos informa que a partir de las 16hs estara listo para retirar
-          .</label>
+        <label for="radio4">Llamamos a la compañia para averiguar por la valija.</label>
       </div>
     </div>
   </div>
-  <button type="button" class="myButton" id="responder" onclick="redirectPage('ayudataxi.html', 'situacion7.html', 'ayudataxi.html', 'situacion7.html')">Siguiente</button>
+  <button type="button" class="myButton" id="responder" onclick="redirectPage('situacion1.html', 'situacion2.html', 'situacion1.html', 'situacion2.html')">Siguiente</button>
   </div>
-
 
 
 </body>
