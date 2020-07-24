@@ -43,3 +43,6 @@ const redirectPage = (url1, url2, url3, url4) => {
 
   window.location.href = url;
 };
+
+$("#btn").click(function() {
+  $(this).fadeOut(3000);
