@@ -1,6 +1,7 @@
 @media screen and (min-width: 300px) and (max-width: 800px) {
   body {
     font-size: 0.8em;
+    background-image: url(tokyo.gif);
   }
   sidebar {
     display: none;
