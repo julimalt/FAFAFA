@@ -14,7 +14,7 @@ body {
   justify-content: center;
   height: 100%;
   margin: 0 auto;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .myButton {
@@ -25,7 +25,7 @@ body {
   display: inline-block;
   cursor: pointer;
   color: #000000;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
   padding: 12px 44px;
