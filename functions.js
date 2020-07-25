@@ -6,6 +6,10 @@ const showDiv = () => {
 
   divRespuestas[0].style.display = "inherit";
   buttonResponder.style.display = "inherit";
+
+  sleep(16000).then(() => {
+    buttonResponder.click();
+  });
 };
 
 const redirectPage = (url1, url2, url3, url4) => {
