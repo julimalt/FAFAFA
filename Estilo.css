@@ -18,6 +18,38 @@ body {
   background-position: 38%;
 }
 
+h1 {
+  position: absolute;
+  width: 250px;
+  height: 95px;
+  left: 362px;
+  top: 105px;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #565454;
+}
+
+h3 {
+  position: absolute;
+  width: 499px;
+  height: 10px;
+  left: 362px;
+  top: 560px;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #353333;
+}
+
 .myButton {
   box-shadow: 3px 4px 0px 0px #000000;
   background-color: transparent;
