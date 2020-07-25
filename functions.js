@@ -9,37 +9,47 @@ const showDiv = () => {
 };
 
 const redirectPage = (url1, url2, url3, url4) => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const myParam = urlParams.get("type");
   const allInputs = document.querySelectorAll("input[type=radio]");
-  let respuesta = 0;
-  let newParams = "";
-  let url = "";
+  let respuesta = "";
+  let page = "";
 
   for (let i = 0; i < allInputs.length; i++) {
     let input = allInputs[i];
     if (input.checked) respuesta = input.value;
   }
 
-  newParams = "type=" + myParam + "&caso=" + respuesta;
-
   switch (respuesta) {
     case "1":
-      url = url1 + "?" + newParams;
+      page = url1;
       break;
     case "2":
-      url = url2 + "?" + newParams;
+      page = url2;
       break;
     case "3":
-      url = url3 + "?" + newParams;
+      page = url3;
       break;
     case "4":
-      url = url4 + "?" + newParams;
+      page = url4;
       break;
-    case "0":
-      url = url2 + "?" + newParams;
+    default:
+      const array = [url1, url2, url3, url4];
+      page = array[Math.floor(Math.random() * array.length)];
       break;
   }
 
-  window.location.href = url;
+  goToPage(page, respuesta);
+};
+
+const goToPage = (page, caso) => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get("type");
+  let newParams = "";
+
+  newParams = "type=" + myParam;
+
+  if (caso) {
+    newParams + "&caso=" + caso;
+  }
+
+  window.location.href = page + "?" + newParams;
 };
