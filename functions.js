@@ -17,6 +17,7 @@ const redirectPage = (url1, url2, url3, url4) => {
     let input = allInputs[i];
     if (input.checked) respuesta = input.value;
   }
+  console.log("\n\nRespuesta", respuesta);
 
   switch (respuesta) {
     case "1":
@@ -47,7 +48,9 @@ const goToPage = (page, caso) => {
 
   newParams = "type=" + myParam;
 
-  if (caso != undefined) {
+  console.log("\n\ncaso", caso);
+  if (caso !== undefined) {
+    console.log("\n\nentró");
     newParams + "&caso=" + caso;
   }
 
