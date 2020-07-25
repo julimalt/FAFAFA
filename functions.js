@@ -47,7 +47,7 @@ const goToPage = (page, caso) => {
 
   newParams = "type=" + myParam;
 
-  if (caso) {
+  if (caso != undefined) {
     newParams + "&caso=" + caso;
   }
 
