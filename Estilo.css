@@ -1,51 +1,36 @@
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  body {
-    font-size: 0.8em;
-  }
-  sidebar {
-    display: none;
-  }
-}
 body {
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
+  background-position: 30%, 75%;
+}
+@media only screen and (max-width: 800px) {
+  body {
+  }
+  sidebar {
+    display: none;
+  }
 }
 
 h1 {
-  position: absolute;
-  width: 250px;
-  height: 95px;
-  left: 362px;
-  top: 105px;
-
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 43px;
-
   color: #565454;
+  text-align: center;
 }
 
 h3 {
-  position: absolute;
-  width: 499px;
-  height: 10px;
-  left: 362px;
-  top: 560px;
-
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.5rem;
   line-height: 27px;
-
   color: #353333;
 }
 
@@ -57,7 +42,6 @@ h3 {
   display: inline-block;
   cursor: pointer;
   color: #000000;
-  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
   padding: 12px 44px;
