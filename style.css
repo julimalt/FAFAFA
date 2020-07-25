@@ -1,0 +1,66 @@
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  body {
+    font-size: 0.8em;
+  }
+  sidebar {
+    display: none;
+  }
+}
+
+body {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "montserrat", sans-serif;
+}
+.caja {
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 400px;
+  font-size: 20px;
+  color: #353535;
+  background-color: #ec486cda;
+  border-radius: 27px;
+  border: 2px solid #494949;
+  float: none;
+  text-align: center;
+  margin: 25px;
+  width: auto;
+  height: 75px;
+}
+
+.myButton {
+  box-shadow: 3px 4px 0px 0px #000000;
+  background-color: #ec486b6c;
+  border-radius: 5px;
+  border: 1px solid #080808;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 44px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #000000;
+}
+
+.myButton:hover {
+  background-color: #ec486cda;
+}
+
+.timide {
+  display: none;
+}
+
+.sociable {
+  display: none;
+}
+
+#responder {
+  display: none;
+}
