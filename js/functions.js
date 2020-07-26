@@ -7,9 +7,9 @@ const showDiv = () => {
   divRespuestas[0].style.display = "inherit";
   buttonResponder.style.display = "inherit";
 
-  sleep(16000).then(() => {
+  setTimeout(() => {
     buttonResponder.click();
-  });
+  }, 16000);
 };
 
 const redirectPage = (url1, url2, url3, url4) => {
