@@ -27,6 +27,9 @@ const redirectPage = (url1, url2, url3, url4) => {
       page = url1;
       break;
     case "2":
+      page = url2;
+      break;
+    case "3":
       page = url3;
       break;
     case "4":
