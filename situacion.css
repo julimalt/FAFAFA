@@ -60,3 +60,7 @@ body {
 #responder {
   display: none;
 }
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}

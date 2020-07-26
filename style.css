@@ -23,7 +23,7 @@ body {
   font-weight: 400px;
   font-size: 20px;
   color: #353535;
-  background-color: #ec486cda;
+  background-color: #ef7771d2;
   border-radius: 27px;
   border: 2px solid #494949;
   float: none;
@@ -35,7 +35,7 @@ body {
 
 .myButton {
   box-shadow: 3px 4px 0px 0px #000000;
-  background-color: #ec486b6c;
+  background-color: #ef7771d2;
   border-radius: 5px;
   border: 1px solid #080808;
   display: inline-block;
@@ -50,7 +50,7 @@ body {
 }
 
 .myButton:hover {
-  background-color: #ec486cda;
+  background-color: #ef7771fd;
 }
 
 .timide {
