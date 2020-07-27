@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Perdidos en Tokyo</title>
+  <link rel="shortcut icon" href="images/favicon.jfif" />
+  <link rel="stylesheet" href="./css/situacion.css" />
+  <link rel="stylesheet" href="./css/estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
+  </style>
+</head>
+
+<body class="background" background="images/obelisco.jpg">
+  <div class="caja">
+    Llegamos a Buenos Aires, y nos juntamos con Marcelo el gerente, en la empresa para charlar sobre la TedX
+    y nos comenta que hablo con Fernando y este le conto que habiamos tenido algunas dificultades durante nuestra estadía en Tokyo,
+    como que habiamos llegado sobre la hora a la charla y a la cena, y que estabamos un poco desaliñados.
+    </div>
+  <button type="button" class="myButton" onclick="showDiv()">Tomar decisión</button>
+  <div>
+    <div class="sociable">
+      <div class="inputGroup box">
+        <label>
+        <input name="respuesta" type="radio" class="inputGroup"  value="1" />
+        Le decimos que puede ser cierto, le contamos todo lo que nos paso en Tokyo pero tambien le decimos que vamos a trabajar para mejorar todo eso, y le agradecemos por la experiencia.
+      </label>
+      </div>
+      <div class="inputGroup box">
+        <label>
+        <input name="respuesta" type="radio" class="inputGroup"  value="2" />
+        Le decimos que estamos en desacuerdo, que Fernando está equivocado y que nada de lo que pasó fue culpa nuestra.
+      </label>
+      </div>
+    </div>
+    <div class="timide">
+      <div class="inputGroup box">
+        <label>
+        <input name="respuesta" type="radio" class="inputGroup"  value="3" />
+        Le decimos que puede ser cierto, le contamos todo lo que nos paso en Tokyo pero tambien le decimos que vamos a trabajar para mejorar todo eso, y le agradecemos por la experiencia.
+      </label>
+      </div>
+      <div class="inputGroup box">
+        <label>
+        <input name="respuesta" type="radio" class="inputGroup"  value="4" />
+        Le decimos que estamos en desacuerdo, que Fernando está equivocado y que nada de lo que pasó fue culpa nuestra.
+      </label>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="myButton" id="responder" onclick="redirectPage('ascenso.html', 'devolucion.html', 'ascenso.html', 'devolucion.html')">Siguiente</button>
+  </div>
+
+
+</body>
+<script type="text/javascript" src="./js/functions.js"></script>
+
+</html>
