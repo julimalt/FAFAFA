@@ -18,6 +18,10 @@ body {
   }
 }
 
+.index-container {
+  height: 100vh;
+}
+
 h1 {
   font-style: normal;
   font-weight: 500;
