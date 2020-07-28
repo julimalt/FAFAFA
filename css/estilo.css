@@ -7,13 +7,14 @@ body {
   height: 100%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  background-position: 30%, 75%;
 }
-@media only screen and (max-width: 800px) {
+
+@media screen and (max-width: 800px) {
   body {
+    background-position: 30%, 75%;
   }
-  sidebar {
-    display: none;
+  .myButton {
+    font-size: 2rem;
   }
 }
 
@@ -42,7 +43,7 @@ h3 {
   display: inline-block;
   cursor: pointer;
   color: #000000;
-  font-size: 15px;
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 12px 44px;
   text-decoration: none;
