@@ -36,7 +36,7 @@
   animation: heartBeat;
   animation-duration: 1s;
   animation-delay: 10s;
-  animation-iteration-count: 5;
+  animation-iteration-count: 7;
 }
 
 .sociable {
@@ -45,7 +45,7 @@
   animation: heartBeat;
   animation-duration: 1s;
   animation-delay: 10s;
-  animation-iteration-count: 5;
+  animation-iteration-count: 7;
 }
 
 #responder {
