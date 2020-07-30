@@ -58,11 +58,13 @@ li {
   }
   .personajes-container {
     flex-flow: row wrap;
+    margin: 0px;
   }
   .texto-presentacion {
     font-size: 1.125rem;
   }
   .formato-boton {
     padding: 0px;
+    margin-top: 10px;
   }
 }
