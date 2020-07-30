@@ -1,3 +1,10 @@
+.situacion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .caja {
   text-decoration: none;
   padding: 15px;
