@@ -60,5 +60,17 @@
   display: inherit;
 }
 
+.reloj {
+  padding: 10px;
+  font-size: 20px;
+  color: #fffdfd;
+  background-color: #1b1b1bda;
+  border-radius: 27px;
+  border: 2px solid #828282;
+  margin: 1px;
+  width: fit-content;
+  margin-left: auto;
+}
+
 @media screen and (max-width: 800px) {
 }
