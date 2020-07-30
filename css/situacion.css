@@ -56,5 +56,9 @@
   display: none;
 }
 
+#decision {
+  display: inherit;
+}
+
 @media screen and (max-width: 800px) {
 }

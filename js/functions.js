@@ -3,9 +3,11 @@ const showDiv = () => {
   const myParam = urlParams.get("type");
   const divRespuestas = document.getElementsByClassName(myParam);
   const buttonResponder = document.getElementById("responder");
+  const buttonDecision = document.getElementById("decision");
 
   divRespuestas[0].style.display = "inherit";
   buttonResponder.style.display = "inherit";
+  buttonDecision.style.display = "none";
 
   setTimeout(() => {
     buttonResponder.click();
