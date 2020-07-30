@@ -47,7 +47,7 @@ h3 {
 
 .myButton {
   box-shadow: 3px 4px 0px 0px #000000;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   border: 1px solid #080808;
   display: inline-block;
@@ -72,6 +72,6 @@ h3 {
     background-position: 30%, 75%;
   }
   .myButton {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
