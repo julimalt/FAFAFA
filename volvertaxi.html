@@ -3,58 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perdidos en Tokyo</title>
-  <link rel="shortcut icon" href="images/favicon.jfif" />
-  <link rel="stylesheet" href="./css/situacion.css" />
-  <link rel="stylesheet" href="./css/estilo.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
-  </style>
-</head>
+    <title>Perdidos en Tokyo</title>
+    <link rel="shortcut icon" href="images/favicon.jfif" />
+    <link rel="stylesheet" href="./css/situacion.css" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
+    </style>
+  </head>
 
-<body class="background" background="images/fondo2.gif">
-  <div class="caja">
-    Paramos un taxi y como no sabemos la dirección exacta del hotel porque la teniamos en nuestro celular,
-    le decimos al conductor el nombre del hotel, cuando nos bajamos nos damos cuenta de que 
-    ¡ES LA MISMA CADENA PERO DISTINTO HOTEL! Entramos y pedimos la dirección correcta, es cerca pero nos queda poco tiempo y todavia falta cambiarnos de ropa.
-  </div>
-  <button type="button" class="myButton" onclick="showDiv()">Tomar decisión</button>
-  <div>
-    <div class="sociable">
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="1" />
-        Caminamos al hotel.
-      </label>
+  <body class="background" background="images/fondo2.gif">
+    <div class="situacion container">
+      <div class="caja">
+        Paramos un taxi y como no sabemos la dirección exacta del hotel porque
+        la teniamos en nuestro celular, le decimos al conductor el nombre del
+        hotel, cuando nos bajamos nos damos cuenta de que ¡ES LA MISMA CADENA
+        PERO DISTINTO HOTEL! Entramos y pedimos la dirección correcta, es cerca
+        pero nos queda poco tiempo y todavia falta cambiarnos de ropa.
       </div>
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="2" />
-        Tomamos un taxi.
-      </label>
+      <button type="button" class="myButton" onclick="showDiv()">
+        Tomar decisión
+      </button>
+      <div>
+        <div class="sociable">
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="1"
+              />
+              Caminamos al hotel.
+            </label>
+          </div>
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="2"
+              />
+              Tomamos un taxi.
+            </label>
+          </div>
+        </div>
+        <div class="timide">
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="3"
+              />
+              Caminamos al hotel.
+            </label>
+          </div>
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="4"
+              />
+              Tomamos un taxi.
+            </label>
+          </div>
+        </div>
       </div>
+      <button
+        type="button"
+        class="myButton"
+        id="responder"
+        onclick="redirectPage('devolucion.html', 'tomamostaxi.html', 'devolucion.html', 'tomamostaxi.html')"
+      >
+        Siguiente
+      </button>
     </div>
-    <div class="timide">
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="3" />
-        Caminamos al hotel.
-      </label>
-      </div>
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="4" />
-        Tomamos un taxi.
-      </label>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="myButton" id="responder" onclick="redirectPage('devolucion.html', 'tomamostaxi.html', 'devolucion.html', 'tomamostaxi.html')">Siguiente</button>
-  </div>
-
-
-</body>
-<script type="text/javascript" src="./js/functions.js"></script>
-
+  </body>
+  <script type="text/javascript" src="./js/functions.js"></script>
 </html>

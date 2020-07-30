@@ -3,59 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perdidos en Tokyo</title>
-  <link rel="shortcut icon" href="images/favicon.jfif" />
-  <link rel="stylesheet" href="./css/situacion.css" />
-  <link rel="stylesheet" href="./css/estilo.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
-  </style>
-</head>
+    <title>Perdidos en Tokyo</title>
+    <link rel="shortcut icon" href="images/favicon.jfif" />
+    <link rel="stylesheet" href="./css/situacion.css" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
+    </style>
+  </head>
 
-<body class="background" background="images/obelisco.jpg">
-  <div class="caja">
-    Llegamos a Buenos Aires, y nos juntamos con Marcelo el gerente, en la empresa para charlar sobre la TedX
-    y nos comenta que hablo con Fernando y este le conto que habiamos tenido  dificultades en Tokyo, 
-    como que habiamos llegado sobre la hora a la charla, que estabamos un poco desaliñados y además le dijo 
-    que habíamos hablado mal de la empresa y de nuestros compañeros.
+  <body class="background" background="images/obelisco.jpg">
+    <div class="situacion container">
+      <div class="caja">
+        Llegamos a Buenos Aires, y nos juntamos con Marcelo el gerente, en la
+        empresa para charlar sobre la TedX y nos comenta que hablo con Fernando
+        y este le conto que habiamos tenido dificultades en Tokyo, como que
+        habiamos llegado sobre la hora a la charla, que estabamos un poco
+        desaliñados y además le dijo que habíamos hablado mal de la empresa y de
+        nuestros compañeros.
+      </div>
+      <button type="button" class="myButton" onclick="showDiv()">
+        Tomar decisión
+      </button>
+      <div>
+        <div class="sociable">
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="1"
+              />
+              Negamos haberle dicho a Fernando esas cosas, sino que el
+              malinterpreto lo dicho.
+            </label>
+          </div>
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="2"
+              />
+              Nos hacemos cargo de todo lo dicho pero decimos que solo habíamos
+              dicho la verdad.
+            </label>
+          </div>
+        </div>
+        <div class="timide">
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="3"
+              />
+              Negamos haberle dicho a Fernando esas cosas, sino que el
+              malinterpreto lo dicho.
+            </label>
+          </div>
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="4"
+              />
+              Nos hacemos cargo de todo lo dicho pero decimos que solo habíamos
+              dicho la verdad.
+            </label>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="myButton"
+        id="responder"
+        onclick="goToPage('devolucion.html',undefined)"
+      >
+        Siguiente
+      </button>
     </div>
-  <button type="button" class="myButton" onclick="showDiv()">Tomar decisión</button>
-  <div>
-    <div class="sociable">
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="1" />
-        Negamos haberle dicho a Fernando esas cosas, sino que el malinterpreto lo dicho.
-      </label>
-      </div>
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="2" />
-        Nos hacemos cargo de todo lo dicho pero decimos que solo habíamos dicho la verdad.
-      </label>
-      </div>
-    </div>
-    <div class="timide">
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="3" />
-        Negamos haberle dicho a Fernando esas cosas, sino que el malinterpreto lo dicho.
-      </label>
-      </div>
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="4" />
-        Nos hacemos cargo de todo lo dicho pero decimos que solo habíamos dicho la verdad.
-      </label>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="myButton" id="responder" onclick="goToPage('devolucion.html',undefined)">Siguiente</button>
-  </div>
-
-
-</body>
-<script type="text/javascript" src="./js/functions.js"></script>
-
+  </body>
+  <script type="text/javascript" src="./js/functions.js"></script>
 </html>

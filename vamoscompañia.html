@@ -3,57 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perdidos en Tokyo</title>
-  <link rel="shortcut icon" href="images/favicon.jfif" />
-  <link rel="stylesheet" href="./css/situacion.css" />
-  <link rel="stylesheet" href="./css/estilo.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
-  </style>
-</head>
+    <title>Perdidos en Tokyo</title>
+    <link rel="shortcut icon" href="images/favicon.jfif" />
+    <link rel="stylesheet" href="./css/situacion.css" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
+    </style>
+  </head>
 
-<body class="background" background="images/fondo2.gif">
-  <div class="caja">
-    Llegamos a la compañia y luego de contar nuestra situacion, nos dicen que en esa sucursal no se realizan los trayectos desde el aeropuerto, por lo tanto nuestra valija no esta en esta sucursal, ademas nos ofrecen la direccion de la sucursal correcta y nos recomienda un local de ropa 
-    <br>¿Que hacemos?
-  </div>
-  <button type="button" class="myButton" onclick="showDiv()">Tomar decisión</button>
-  <div>
-    <div class="sociable">
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="1" />
-         Nos dirigimos a la sucursal correcta para conseguir nuestra valija.
-        </label>
+  <body class="background" background="images/fondo2.gif">
+    <div class="situacion container">
+      <div class="caja">
+        Llegamos a la compañia y luego de contar nuestra situacion, nos dicen
+        que en esa sucursal no se realizan los trayectos desde el aeropuerto,
+        por lo tanto nuestra valija no esta en esta sucursal, ademas nos ofrecen
+        la direccion de la sucursal correcta y nos recomienda un local de ropa
+        <br />¿Que hacemos?
       </div>
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="2" />
-        Vamos al local de ropa a comprar lo que necesitamos para la conferencia.
-      </label>
+      <button type="button" class="myButton" onclick="showDiv()">
+        Tomar decisión
+      </button>
+      <div>
+        <div class="sociable">
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="1"
+              />
+              Nos dirigimos a la sucursal correcta para conseguir nuestra
+              valija.
+            </label>
+          </div>
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="2"
+              />
+              Vamos al local de ropa a comprar lo que necesitamos para la
+              conferencia.
+            </label>
+          </div>
+        </div>
+        <div class="timide">
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="3"
+              />
+              Nos dirigimos a la sucursal correcta para conseguir nuestra
+              valija.
+            </label>
+          </div>
+          <div class="inputGroup box">
+            <label>
+              <input
+                name="respuesta"
+                type="radio"
+                class="inputGroup"
+                value="4"
+              />
+              Vamos al local de ropa a comprar lo que necesitamos para la
+              conferencia.
+            </label>
+          </div>
+        </div>
       </div>
+      <button
+        type="button"
+        class="myButton"
+        id="responder"
+        onclick="redirectPage('tren2.html', 'tren.html', 'tren2.html', 'tren.html')"
+      >
+        Siguiente
+      </button>
     </div>
-    <div class="timide">
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="3" />
-        Nos dirigimos a la sucursal correcta para conseguir nuestra valija.
-      </label>
-      </div>
-      <div class="inputGroup box">
-        <label>
-        <input name="respuesta" type="radio" class="inputGroup"  value="4" />
-        Vamos al local de ropa a comprar lo que necesitamos para la conferencia.
-      </label>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="myButton" id="responder" onclick="redirectPage('tren2.html', 'tren.html', 'tren2.html', 'tren.html')">Siguiente</button>
-  </div>
-
-
-</body>
-<script type="text/javascript" src="./js/functions.js"></script>
-
+  </body>
+  <script type="text/javascript" src="./js/functions.js"></script>
 </html>
