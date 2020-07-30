@@ -6,15 +6,6 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-  body {
-    background-position: 30%, 75%;
-  }
-  .myButton {
-    font-size: 2rem;
-  }
-}
-
 .index-container {
   height: 100vh;
 }
@@ -71,10 +62,16 @@ h3 {
 .myButton:hover {
   background-color: #cfcfcf;
 }
-/* .myButton:active {
-	position: absolute;
-	top:1px;
-} */
+
 .inputGroup:active {
   background-color: #e7b4ccda;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-position: 30%, 75%;
+  }
+  .myButton {
+    font-size: 2rem;
+  }
 }
