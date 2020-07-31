@@ -7,15 +7,15 @@
 
 .texto-presentacion {
   padding: 30px 50px;
-  font-weight: 400;
-  font-size: 0.8rem;
+  font-weight: 700;
+  font-size: 1rem;
   color: #666565;
   background-color: #e7b4ccda;
   border-radius: 27px;
   border: 2px solid #828282;
   text-align: center;
   margin: 15px;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", sans-serif;
 }
 
 .formato-boton {
