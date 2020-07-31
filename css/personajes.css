@@ -8,7 +8,7 @@
 .texto-presentacion {
   padding: 30px 50px;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   color: #666565;
   background-color: #e7b4ccda;
   border-radius: 27px;
@@ -61,7 +61,7 @@ li {
     margin: 0px;
   }
   .texto-presentacion {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   .formato-boton {
     padding: 0px;
