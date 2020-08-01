@@ -36,6 +36,9 @@ h1 {
   line-height: 43px;
   color: #565454;
   text-align: center;
+  animation: slideInUp;
+  animation-duration: 3s;
+  animation-delay: 1s;
 }
 
 h3 {
@@ -44,6 +47,9 @@ h3 {
   font-size: 1.5rem;
   line-height: 2px;
   color: #1d1c1ce8;
+  animation: fadeInUpBig;
+  animation-duration: 1s;
+  animation-delay: 2s;
 }
 
 .myButton {
