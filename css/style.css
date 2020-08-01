@@ -21,7 +21,7 @@ body {
   text-decoration: none;
   padding: 15px;
   font-weight: 400px;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #353535;
   background-color: #ef7771d2;
   border-radius: 27px;
@@ -30,7 +30,6 @@ body {
   text-align: center;
   margin: 25px;
   width: auto;
-  height: 75px;
 }
 
 .tren {
