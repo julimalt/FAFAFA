@@ -82,46 +82,49 @@ const getHourUpdated = () => {
   /*Obtenemos el valor del parámetro de la URL llamado hs*/
   let hoursParam = urlParams.get("hs");
 
-  /*Pasamos el valor de hoursParam a int*/
-  hoursParam = parseFloat(hoursParam);
+  /*Checkeo que lleguen el parámetro hs en el la URL*/
+  if (hoursParam != "") {
+    /*Pasamos el valor de hoursParam a int*/
+    hoursParam = parseFloat(hoursParam);
 
-  /*Obtenemos el tag span con el id "horas"*/
-  const objetoHoras = document.getElementById("horas");
+    /*Obtenemos el tag span con el id "horas"*/
+    const objetoHoras = document.getElementById("horas");
 
-  /*Obtenemos el valor del span id "reloj" y pasamos el texto a int*/
-  const horaActual = parseInt(objetoHoras.innerText);
+    /*Obtenemos el valor del span id "reloj" y pasamos el texto a int*/
+    const horaActual = parseInt(objetoHoras.innerText);
 
-  /*Obtenemos el tag span con el id "horas"*/
-  const objetoMinutos = document.getElementById("minutos");
+    /*Obtenemos el tag span con el id "horas"*/
+    const objetoMinutos = document.getElementById("minutos");
 
-  /*Obtenemos el valor del span id "reloj" y pasamos el texto a int*/
-  let minutosActual = parseInt(objetoMinutos.innerText);
+    /*Obtenemos el valor del span id "reloj" y pasamos el texto a int*/
+    let minutosActual = parseInt(objetoMinutos.innerText);
 
-  /*horasAdicionales va a tener el valor entero de las horas que llegaron por parámetro de la url*/
-  horasAdicionales = Math.floor(hoursParam);
+    /*horasAdicionales va a tener el valor entero de las horas que llegaron por parámetro de la url*/
+    horasAdicionales = Math.floor(hoursParam);
 
-  /*nuevaHora va a tener la suma de la hora actual del span + las horasAdicionales*/
-  let nuevaHora = horaActual + horasAdicionales;
+    /*nuevaHora va a tener la suma de la hora actual del span + las horasAdicionales*/
+    let nuevaHora = horaActual + horasAdicionales;
 
-  /*horasAdicionales va a tener el valor flotante de las horas que llegaron por parámetro de la url*/
-  minutosAdicionales = hoursParam % 1;
+    /*horasAdicionales va a tener el valor flotante de las horas que llegaron por parámetro de la url*/
+    minutosAdicionales = hoursParam % 1;
 
-  /*Checkeo si los minutosAdicionales recibidos por parámetro de la url son 0.5,
+    /*Checkeo si los minutosAdicionales recibidos por parámetro de la url son 0.5,
   si lo son hago que minutosActual se le sumen 30*/
-  if (minutosAdicionales === 0.5) {
-    minutosActual = minutosActual + 30;
-  }
+    if (minutosAdicionales === 0.5) {
+      minutosActual = minutosActual + 30;
+    }
 
-  /*Checkeo si los minutosActual es igual a 60,
+    /*Checkeo si los minutosActual es igual a 60,
   si lo es le sumo 1 a nuevaHora y le asigno a minutosActual "00"*/
-  if (minutosActual === 60) {
-    nuevaHora = nuevaHora + 1;
-    minutosActual = "00";
+    if (minutosActual === 60) {
+      nuevaHora = nuevaHora + 1;
+      minutosActual = "00";
+    }
+
+    /*Le asigno el valor de nuevaHora al span con id "horas"*/
+    objetoHoras.innerHTML = nuevaHora;
+
+    /*Le asigno el valor de minutosActual al span con id "minutos"*/
+    objetoMinutos.innerHTML = minutosActual;
   }
-
-  /*Le asigno el valor de nuevaHora al span con id "horas"*/
-  objetoHoras.innerHTML = nuevaHora;
-
-  /*Le asigno el valor de minutosActual al span con id "minutos"*/
-  objetoMinutos.innerHTML = minutosActual;
 };
