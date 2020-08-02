@@ -18,9 +18,7 @@
 
   <body class="background" background="./images/fondo2.gif">
     <div class="reloj animate__animated animate__fadeInUp">
-      12
-      <span>:</span>
-      00
+      <span id="reloj">12:00</span>
     </div>
 
     <div class="situacion-container">
@@ -101,4 +99,13 @@
     </div>
   </body>
   <script type="text/javascript" src="./js/functions.js"></script>
+  <script>
+    window.addEventListener("load", () => {
+      // const urlParams = new URLSearchParams(window.location.search);
+      // const hoursParam = urlParams.get("hs");
+      const objetoReloj = document.getElementById("reloj");
+      console.log("\n\nreloj", objetoReloj);
+      // objetoReloj.innerHTML = (objetoReloj.valor + hoursParam);
+    });
+  </script>
 </html>
