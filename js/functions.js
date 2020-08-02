@@ -24,10 +24,6 @@ const showDiv = () => {
 };
 
 //función que nos cambie el horario del div que contiene el reloj dependiendo el parámetro hs
-// const agregarHoraYRedirigir = (url1, url2, url3, url4, hora) => {
-//   calcularHora(hora);
-//   redirectPage(url1, url2, url3, url4);
-// };
 
 const redirectPage = (url1, url2, url3, url4, hs) => {
   /*Obtenemos una lista con todos los tags que son del tipo <input type="radio">*/

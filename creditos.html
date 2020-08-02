@@ -19,14 +19,14 @@
   </head>
 
   <body class="background" background="images/creditos.gif">
-    <embed
+    <!-- <embed
       src="creditos.mp3"
       width="180"
       height="90"
       loop="false"
       autoplay="true"
       hidden="false"
-    />
+    /> -->
     <h1 class="animate__animated animate__slideInUp">Desarrolladoras</h1>
     <h3 class="animate__animated animate__fadeInUpBig">
       Luna Bartolozzi / Julieta Altamirano
@@ -55,5 +55,29 @@
         nuestras locuras.
       </h3>
     </h3>
+    <iframe
+      src="silence.mp3"
+      allow="autoplay"
+      id="audio"
+      style="display: none;"
+    ></iframe>
+    <audio id="creditos-audio" autoplay loop>
+      <source src="creditos.mp3" type="audio/mp3" />
+    </audio>
   </body>
+  <script>
+    // window.onload = function () {
+    //   document
+    //     .getElementById("audio")
+    //     .play()
+    //     .then(document.getElementById("creditos-audio").play());
+    // };
+
+    // window.addEventListener("load", () => {
+    //   document
+    //     .getElementById("audio")
+    //     .play()
+    //     .then(document.getElementById("creditos-audio").play());
+    // });
+  </script>
 </html>
