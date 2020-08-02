@@ -104,19 +104,17 @@
       /*Obtenemos los parámetros de la URL actual*/
       const urlParams = new URLSearchParams(window.location.search);
       /*Obtenemos el valor del parámetro de la URL llamado hs*/
-      const hoursParam = urlParams.get("hs");
-      console.log("\n\nValor hoursParam: ", hoursParam);
+      let hoursParam = urlParams.get("hs");
+      /*Pasamos el valor de hoursParam a int*/
+      hoursParam = parseInt(hoursParam);
       /*Obtenemos el tag span con el id "reloj"*/
       const objetoReloj = document.getElementById("reloj");
-      console.log("\n\nValor reloj: ", objetoReloj);
       /*Obtenemos el valor del span id "reloj" y pasamos el texto a int*/
       const horaActual = parseInt(objetoReloj.innerText);
-      console.log("\n\nValor horaActual: ", horaActual);
       /*Le sumamos a hora actual el valor que nos llegó por parámetro*/
       const nuevaHora = horaActual + hoursParam;
-      console.log("\n\nValor nuevaHora: ", nuevaHora);
       /*Le asignamos como nuevo valor al span, la suma de horas (ej: 12+2 = 14) + ":00",
-       nos quedaría "14:00"*/
+     nos quedaría "14:00"*/
       objetoReloj.innerHTML = nuevaHora + ":00";
     });
   </script>
