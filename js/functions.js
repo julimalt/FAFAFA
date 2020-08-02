@@ -83,7 +83,7 @@ const getHourUpdated = () => {
   let hoursParam = urlParams.get("hs");
 
   /*Checkeo que lleguen el parámetro hs en el la URL*/
-  if (hoursParam != "") {
+  if (hoursParam != null) {
     /*Pasamos el valor de hoursParam a int*/
     hoursParam = parseFloat(hoursParam);
 
