@@ -117,12 +117,11 @@
       objetoHoras = parseInt(objetoHoras.innerText);
       /*Obtenemos el tag span con el id "horas"*/
       let objetoMinutos = document.getElementById("minutos");
-      console.log("\n\nValor objetoMinutos: ", objetoMinutos);
       /*Obtenemos el valor del span id "reloj" y pasamos el texto a int*/
       objetoMinutos = parseInt(objetoMinutos.innerText);
-      console.log("\n\nValor objetoMinutos: ", objetoMinutos);
       /*Le sumamos a hora actual el valor que nos llegó por parámetro*/
       const nuevaHora = objetoHoras + hoursParam;
+      console.log("\n\nValor nuevaHora: ", nuevaHora);
       /*Le asignamos como nuevo valor al span, la suma de horas (ej: 12+2 = 14) + ":00",
  nos quedaría "14:00"*/
       objetoHoras.innerHTML = nuevaHora + ":" + objetoMinutos;
