@@ -14,7 +14,12 @@ const showDiv = () => {
   }, 16000);
 };
 
-const redirectPage = (url1, url2, url3, url4) => {
+// const agregarHoraYRedirigir = (url1, url2, url3, url4, hora) => {
+//   calcularHora(hora);
+//   redirectPage(url1, url2, url3, url4);
+// };
+
+const redirectPage = (url1, url2, url3, url4, hs) => {
   const allInputs = document.querySelectorAll("input[type=radio]");
   let respuesta = "";
   let page = "";
@@ -43,19 +48,21 @@ const redirectPage = (url1, url2, url3, url4) => {
       break;
   }
 
-  goToPage(page, respuesta);
+  goToPage(page, hs);
 };
 
-const goToPage = (page, caso) => {
+const goToPage = (page, hs) => {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("type");
   let newParams = "";
 
   newParams = "type=" + myParam;
 
-  if (caso !== undefined) {
-    newParams = newParams + "&caso=" + caso;
+  if (hs !== undefined) {
+    newParams = newParams + "&hs=" + hs;
   }
 
   window.location.href = page + "?" + newParams;
 };
+
+//función que nos cambie el horario del div que contiene el reloj dependiendo el parámetro hs

@@ -18,10 +18,13 @@
   </head>
 
   <body class="background" background="images/fondo2.gif">
+    <div class="reloj animate__animated animate__fadeInUp">
+      <span id="reloj">14:00</span>
+    </div>
     <div class="situacion-container">
       <div class="caja animate__animated animate__fadeInDown">
-        Compramos la ropa que necesitamos para la presentación, son las 14hs nos
-        quedan aun 4hs para la charla.
+        Compramos la ropa que necesitamos para la presentación, y aún nos queda
+        tiempo para la charla.
       </div>
       <button
         type="button"
@@ -95,4 +98,14 @@
     </div>
   </body>
   <script type="text/javascript" src="./js/functions.js"></script>
+  <script>
+    window.addEventListener("load", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const hoursParam = urlParams.get("hs");
+      const objetoReloj = document.getElementById("reloj");
+      const horaActual = parseInt(objetoReloj.innerText);
+      const nuevaHora = horaActual + hoursParam;
+      objetoReloj.innerHTML = nuevaHora + ":00";
+    });
+  </script>
 </html>
