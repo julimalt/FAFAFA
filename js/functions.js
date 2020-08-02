@@ -1,23 +1,27 @@
 const showDiv = () => {
+  /*Obtenemos los parámetros de la URL actual*/
   const urlParams = new URLSearchParams(window.location.search);
+  /*Obtenemos el valor del parámetro de la URL llamado type*/
   const myParam = urlParams.get("type");
+  /*Obtenemos todas los tags que tienen class con el valor del parámetro de type*/
   const divRespuestas = document.getElementsByClassName(myParam);
+  /*Obtenemos el tag button con el id "responder"*/
   const buttonResponder = document.getElementById("responder");
+  /*Obtenemos el tag button con el id "decision"*/
   const buttonDecision = document.getElementById("decision");
 
+  /*Agarramos el primer elemento de la lista de tags de divRespuestas y le ponemos el estilo de display: inherit*/
   divRespuestas[0].style.display = "inherit";
+  /*Le ponemos el estilo de display: inherit al botón con id "responder"*/
   buttonResponder.style.display = "inherit";
+  /*Le ponemos el estilo de display: inherit al botón con id "decision"*/
   buttonDecision.style.display = "none";
 
+  /*setTimeout ejecuta después de 16000 ms el click en el botón con id "responder"*/
   setTimeout(() => {
     buttonResponder.click();
   }, 16000);
 };
-
-// const agregarHoraYRedirigir = (url1, url2, url3, url4, hora) => {
-//   calcularHora(hora);
-//   redirectPage(url1, url2, url3, url4);
-// };
 
 const redirectPage = (url1, url2, url3, url4, hs) => {
   const allInputs = document.querySelectorAll("input[type=radio]");
@@ -66,3 +70,7 @@ const goToPage = (page, hs) => {
 };
 
 //función que nos cambie el horario del div que contiene el reloj dependiendo el parámetro hs
+// const agregarHoraYRedirigir = (url1, url2, url3, url4, hora) => {
+//   calcularHora(hora);
+//   redirectPage(url1, url2, url3, url4);
+// };
