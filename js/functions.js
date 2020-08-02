@@ -24,6 +24,7 @@ const showDiv = () => {
 };
 
 const redirectPage = (url1, url2, url3, url4, hs) => {
+  /*Obtenemos una lista con todos los tags que son del tipo <input type="radio">*/
   const allInputs = document.querySelectorAll("input[type=radio]");
   let respuesta = "";
   let page = "";

@@ -19,7 +19,11 @@
 
   <body class="background" background="images/fondo2.gif">
     <div class="reloj animate__animated animate__fadeInUp">
-      <span id="reloj">14:30</span>
+      <span>
+        <span id="horas">14</span>
+        <span>:</span>
+        <span id="minutos">30</span>
+      </span>
     </div>
     <div class="situacion-container">
       <div class="caja animate__animated animate__fadeInDown">
@@ -107,15 +111,18 @@
       let hoursParam = urlParams.get("hs");
       /*Pasamos el valor de hoursParam a int*/
       hoursParam = parseInt(hoursParam);
-      /*Obtenemos el tag span con el id "reloj"*/
-      const objetoReloj = document.getElementById("reloj");
+      /*Obtenemos el tag span con el id "horas"*/
+      const objetoHoras = document.getElementById("horas");
+      /*Obtenemos el tag span con el id "horas"*/
+      const objetoMinutos = document.getElementById("minutos");
       /*Obtenemos el valor del span id "reloj" y pasamos el texto a int*/
-      const horaActual = parseInt(objetoReloj.innerText);
+      const horaActual = parseInt(objetoHoras.innerText);
       /*Le sumamos a hora actual el valor que nos llegó por parámetro*/
       const nuevaHora = horaActual + hoursParam;
       /*Le asignamos como nuevo valor al span, la suma de horas (ej: 12+2 = 14) + ":00",
      nos quedaría "14:00"*/
-      objetoReloj.innerHTML = nuevaHora + ":00";
+      objetoReloj.innerHTML =
+        nuevaHora + ":" + parseInt(objetoMinutos.innerText);
     });
   </script>
 </html>
