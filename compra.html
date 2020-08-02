@@ -130,7 +130,7 @@
       let minutosActual = parseInt(objetoMinutos.innerText);
 
       /*horasAdicionales va a tener el valor entero de las horas que llegaron por parámetro de la url*/
-      horasAdicionales = hoursParam / 1;
+      horasAdicionales = Math.floor(hoursParam);
 
       /*nuevaHora va a tener la suma de la hora actual del span + las horasAdicionales*/
       let nuevaHora = horaActual + horasAdicionales;
@@ -138,13 +138,10 @@
       /*horasAdicionales va a tener el valor flotante de las horas que llegaron por parámetro de la url*/
       minutosAdicionales = hoursParam % 1;
 
-      console.log("\n\nValor minutosAdicionales: ", minutosAdicionales);
-
       /*Checkeo si los minutosAdicionales recibidos por parámetro de la url son 0.5,
       si lo son hago que minutosActual se le sumen 30*/
       if (minutosAdicionales === 0.5) {
         minutosActual = minutosActual + 30;
-        console.log("\n\nValor minutosActual: ", minutosActual);
       }
 
       /*Checkeo si los minutosActual es igual a 60,
@@ -152,9 +149,6 @@
       if (minutosActual === 60) {
         nuevaHora = nuevaHora + 1;
         minutosActual = "00";
-
-        console.log("\n\nValor nuevaHora: ", nuevaHora);
-        console.log("\n\nValor minutosActual: ", minutosActual);
       }
 
       /*Le asigno el valor de nuevaHora al span con id "horas"*/
