@@ -17,7 +17,7 @@
   </head>
   <body class="background" background="images/fondo2.gif">
     <div class="reloj animate__animated animate__fadeInUp">
-      <p id="horas">00</p>
+      <p id="horas">14</p>
       <p class="puntos-horaf">:</p>
       <p id="minutos">00</p>
     </div>
@@ -95,11 +95,15 @@
         type="button"
         class="myButton"
         id="responder"
-        onclick="redirectPage('vamos-sucursal.html', 'compra.html', 'vamos-sucursal.html', 'compra.html', undefined)"
+        onclick="redirectPage('vamos-sucursal.html', 'compra.html', 'vamos-sucursal.html', 'compra.html', 1)"
       >
         Siguiente
       </button>
     </div>
   </body>
   <script type="text/javascript" src="./js/functions.js"></script>
+  <script>
+    /*addEventListener("load", función), espera a que la página cargue para ejecutar la función*/
+    window.addEventListener("load", getHourUpdated());
+  </script>
 </html>
