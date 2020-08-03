@@ -15,19 +15,18 @@
       @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
     </style>
   </head>
-  <body class="background" background="images/fondo2.gif">
+
+  <body class="background" background="./images/fondo2.gif">
     <div class="reloj animate__animated animate__fadeInUp">
       <p id="horas">00</p>
       <p class="puntos-horaf">:</p>
       <p id="minutos">00</p>
     </div>
+
     <div class="situacion-container">
       <div class="caja animate__animated animate__fadeInDown">
-        Llegamos a la compañia y luego de contar nuestra situacion, nos dicen
-        que en esa sucursal no se realizan los trayectos desde el aeropuerto,
-        por lo tanto nuestra valija no esta en esta sucursal, ademas nos ofrecen
-        la direccion de la sucursal correcta y nos recomienda un local de ropa
-        <br />¿Que hacemos?
+        Cuando llegamos a la sucursal correcta, nos dicen que nuestra valija no
+        ha llegado allí, que puede ser que llegue más tarde
       </div>
       <button
         type="button"
@@ -47,8 +46,8 @@
                 class="inputGroup"
                 value="1"
               />
-              Nos dirigimos a la sucursal correcta para conseguir nuestra
-              valija.
+              Damos por perdida la valija y volvemos al hotel a dar la charla
+              con la ropa que tenemos puesta.
             </label>
           </div>
           <div class="inputGroup box">
@@ -59,8 +58,7 @@
                 class="inputGroup"
                 value="2"
               />
-              Vamos al local de ropa a comprar lo que necesitamos para la
-              conferencia.
+              Vemos la hora y nos vamos a comprar ropa
             </label>
           </div>
         </div>
@@ -73,8 +71,8 @@
                 class="inputGroup"
                 value="3"
               />
-              Nos dirigimos a la sucursal correcta para conseguir nuestra
-              valija.
+              Damos por perdida la valija y volvemos al hotel a dar la charla
+              con la ropa que tenemos puesta.
             </label>
           </div>
           <div class="inputGroup box">
@@ -85,8 +83,7 @@
                 class="inputGroup"
                 value="4"
               />
-              Vamos al local de ropa a comprar lo que necesitamos para la
-              conferencia.
+              Vemos la hora y nos vamos a comprar ropa
             </label>
           </div>
         </div>
@@ -95,7 +92,7 @@
         type="button"
         class="myButton"
         id="responder"
-        onclick="redirectPage('vamos-sucursal.html', 'compra.html', 'vamos-sucursal.html', 'compra.html', undefined)"
+        onclick="redirectPage('tren2.html', 'compra.html', 'tren2.html', 'compra.html', undefined)"
       >
         Siguiente
       </button>
