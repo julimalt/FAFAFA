@@ -38,7 +38,7 @@
   display: none;
   padding: 5px 0;
   animation: heartBeat;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-delay: 10s;
   animation-iteration-count: 7;
 }
@@ -47,7 +47,7 @@
   display: none;
   padding: 5px 0;
   animation: heartBeat;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-delay: 10s;
   animation-iteration-count: 7;
 }
