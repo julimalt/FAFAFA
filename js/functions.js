@@ -128,3 +128,21 @@ const getHourUpdated = () => {
     objetoMinutos.innerHTML = minutosActual;
   }
 };
+
+const gotoPageWithExtraHours = (html) => {
+  let extraHours = undefined;
+
+  /*Obtenemos los parámetros de la URL actual*/
+  const urlParams = new URLSearchParams(window.location.search);
+
+  /*Obtenemos el valor del parámetro de la URL llamado hs*/
+  const hoursParam = urlParams.get("hs");
+
+  /*Checkeo que lleguen el parámetro hs en el la URL*/
+  if (hoursParam != null) {
+    /*Pasamos el valor de hoursParam a int*/
+    extraHours = parseFloat(hoursParam);
+  }
+
+  gotoPage(html, extraHours);
+};
