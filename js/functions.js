@@ -119,6 +119,8 @@ const getHourUpdated = () => {
     if (minutosActual === 60) {
       nuevaHora = nuevaHora + 1;
       minutosActual = "00";
+    } else if (minutosActual === 0) {
+      minutosActual = "00";
     }
 
     /*Le asigno el valor de nuevaHora al span con id "horas"*/
@@ -129,7 +131,7 @@ const getHourUpdated = () => {
   }
 };
 
-const gotoPageWithExtraHours = (html) => {
+const goToPageWithExtraHours = (html) => {
   let extraHours = undefined;
 
   /*Obtenemos los parámetros de la URL actual*/
@@ -144,5 +146,5 @@ const gotoPageWithExtraHours = (html) => {
     extraHours = parseFloat(hoursParam);
   }
 
-  gotoPage(html, extraHours);
+  goToPage(html, extraHours);
 };
